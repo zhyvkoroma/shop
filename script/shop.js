@@ -14,7 +14,7 @@ const shop = {
   bank: 1000,
 };
 
-let basket = [];
+const basket = [];
 
 const addBasket = (product) => {
   shop[product.name].count -= product.count;
@@ -35,7 +35,7 @@ const sell = () => {
     shop.bank += shop[element.name].price * element.count;
   });
 
-  basket = [];
+  basket.length = 0;
 };
 
 const showCount = (name) => `${shop[name].count} psc`;
