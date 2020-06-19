@@ -42,4 +42,4 @@ const showCount = (name) => `${shop[name].count} psc`;
 
 const showBank = () => `${shop.bank} grn`;
 
-export { sell, checkCount, showCount, showBank };
+export {sell, checkCount, showCount, showBank};
